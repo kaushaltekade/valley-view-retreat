@@ -29,12 +29,12 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="py-20 lg:py-28 section-nature">
+    <section id="contact" className="py-20 lg:py-28 section-nature gold-border-accent">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
           {/* Contact Info */}
           <div>
-            <span className="text-accent font-semibold text-sm uppercase tracking-wider">
+            <span className="text-primary font-semibold text-sm uppercase tracking-wider">
               Get In Touch
             </span>
             <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mt-3 mb-6">
@@ -89,7 +89,7 @@ const Contact = () => {
           {/* Image & Map Preview */}
           <div className="space-y-6">
             {/* Resort Sign Image */}
-            <div className="image-zoom rounded-2xl overflow-hidden shadow-xl">
+            <div className="image-zoom rounded-2xl overflow-hidden shadow-xl shadow-black/40 border border-border">
               <img
                 src={resortSign}
                 alt="VRK Retreat Resort Sign"
@@ -98,7 +98,7 @@ const Contact = () => {
             </div>
 
             {/* Map Embed */}
-            <div className="rounded-2xl overflow-hidden shadow-xl h-64 lg:h-80">
+            <div className="rounded-2xl overflow-hidden shadow-xl shadow-black/40 h-64 lg:h-80 border border-border">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3726.8!2d77.3188083!3d21.3923263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd656377b54fffd%3A0x1068499ebfff4ee9!2sVRK%20Resort%2CMTDC%20Mozari%20Point%20Chikhldara!5e0!3m2!1sen!2sin!4v1704200000000!5m2!1sen!2sin"
                 width="100%"

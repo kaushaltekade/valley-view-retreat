@@ -54,17 +54,17 @@ const Amenities = () => {
   ];
 
   return (
-    <section id="amenities" className="py-20 lg:py-28 section-forest">
+    <section id="amenities" className="py-20 lg:py-28 section-nature gold-border-accent">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <span className="text-accent font-semibold text-sm uppercase tracking-wider">
+          <span className="text-primary font-semibold text-sm uppercase tracking-wider">
             What We Offer
           </span>
-          <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground mt-3 mb-4">
+          <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mt-3 mb-4">
             Resort Amenities
           </h2>
-          <p className="text-primary-foreground/80 text-lg">
+          <p className="text-muted-foreground text-lg">
             Everything you need for a comfortable and memorable stay
           </p>
         </div>
@@ -74,16 +74,16 @@ const Amenities = () => {
           {amenities.map((amenity, index) => (
             <div
               key={amenity.title}
-              className="group bg-primary-foreground/10 backdrop-blur-sm rounded-2xl p-6 border border-primary-foreground/20 hover:bg-primary-foreground/20 transition-all duration-300"
+              className="group bg-charcoal-light/50 backdrop-blur-sm rounded-2xl p-6 border border-border hover:border-primary/50 transition-all duration-300"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="w-14 h-14 rounded-xl bg-accent/20 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                <amenity.icon className="w-7 h-7 text-accent" />
+              <div className="w-14 h-14 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center mb-4 group-hover:bg-primary/20 group-hover:scale-110 transition-all duration-300">
+                <amenity.icon className="w-7 h-7 text-primary" />
               </div>
-              <h3 className="font-semibold text-lg text-primary-foreground mb-2">
+              <h3 className="font-semibold text-lg text-foreground mb-2">
                 {amenity.title}
               </h3>
-              <p className="text-primary-foreground/70 text-sm leading-relaxed">
+              <p className="text-muted-foreground text-sm leading-relaxed">
                 {amenity.description}
               </p>
             </div>

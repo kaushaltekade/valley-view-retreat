@@ -6,102 +6,92 @@
 
 @layer base {
   :root {
-    /* Nature-Luxury Color Palette */
-    --background: 40 20% 98%;
-    --foreground: 30 15% 15%;
+    /* Elegant Dark Luxury Palette */
+    --background: 240 10% 8%;
+    --foreground: 45 15% 92%;
 
-    --card: 40 25% 96%;
-    --card-foreground: 30 15% 15%;
+    --card: 240 10% 12%;
+    --card-foreground: 45 15% 92%;
 
-    --popover: 40 20% 98%;
-    --popover-foreground: 30 15% 15%;
+    --popover: 240 10% 10%;
+    --popover-foreground: 45 15% 92%;
 
-    /* Forest Green - Primary */
-    --primary: 142 35% 28%;
-    --primary-foreground: 40 25% 96%;
+    /* Rich Gold - Primary */
+    --primary: 42 75% 55%;
+    --primary-foreground: 240 10% 8%;
 
-    /* Warm Cream - Secondary */
-    --secondary: 35 30% 92%;
-    --secondary-foreground: 30 25% 25%;
+    /* Deep Charcoal - Secondary */
+    --secondary: 240 8% 16%;
+    --secondary-foreground: 45 15% 88%;
 
-    /* Earth Brown - Muted */
-    --muted: 30 15% 88%;
-    --muted-foreground: 30 15% 45%;
+    /* Muted Slate */
+    --muted: 240 8% 18%;
+    --muted-foreground: 240 5% 55%;
 
-    /* Golden Accent */
-    --accent: 38 75% 55%;
-    --accent-foreground: 30 25% 15%;
+    /* Warm Gold Accent */
+    --accent: 38 85% 58%;
+    --accent-foreground: 240 10% 8%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 45 15% 95%;
 
-    --border: 30 20% 85%;
-    --input: 30 20% 85%;
-    --ring: 142 35% 28%;
+    --border: 240 8% 20%;
+    --input: 240 8% 20%;
+    --ring: 42 75% 55%;
 
     --radius: 0.5rem;
 
-    /* Custom Resort Theme Colors */
-    --forest: 142 35% 28%;
-    --forest-light: 142 30% 45%;
-    --forest-dark: 142 40% 18%;
-    --earth: 30 30% 35%;
-    --earth-light: 30 25% 50%;
-    --sky: 200 55% 55%;
-    --sky-light: 200 60% 75%;
-    --cream: 40 30% 95%;
-    --cream-dark: 35 25% 88%;
-    --gold: 38 75% 55%;
-    --gold-light: 40 70% 70%;
+    /* Custom Elegant Dark Theme Colors */
+    --gold: 42 75% 55%;
+    --gold-light: 45 70% 68%;
+    --gold-dark: 38 80% 42%;
+    --charcoal: 240 10% 8%;
+    --charcoal-light: 240 8% 14%;
+    --charcoal-medium: 240 8% 18%;
+    --slate: 240 5% 30%;
+    --cream: 45 20% 90%;
+    --cream-muted: 45 15% 75%;
 
     /* Sidebar */
-    --sidebar-background: 40 20% 98%;
-    --sidebar-foreground: 30 15% 25%;
-    --sidebar-primary: 142 35% 28%;
-    --sidebar-primary-foreground: 40 25% 96%;
-    --sidebar-accent: 35 30% 92%;
-    --sidebar-accent-foreground: 30 25% 25%;
-    --sidebar-border: 30 20% 85%;
-    --sidebar-ring: 142 35% 28%;
+    --sidebar-background: 240 10% 10%;
+    --sidebar-foreground: 45 15% 88%;
+    --sidebar-primary: 42 75% 55%;
+    --sidebar-primary-foreground: 240 10% 8%;
+    --sidebar-accent: 240 8% 16%;
+    --sidebar-accent-foreground: 45 15% 88%;
+    --sidebar-border: 240 8% 20%;
+    --sidebar-ring: 42 75% 55%;
   }
 
   .dark {
-    --background: 30 15% 10%;
-    --foreground: 40 20% 95%;
-
-    --card: 30 15% 12%;
-    --card-foreground: 40 20% 95%;
-
-    --popover: 30 15% 10%;
-    --popover-foreground: 40 20% 95%;
-
-    --primary: 142 40% 45%;
-    --primary-foreground: 30 15% 10%;
-
-    --secondary: 30 20% 18%;
-    --secondary-foreground: 40 20% 90%;
-
-    --muted: 30 15% 20%;
-    --muted-foreground: 40 15% 65%;
-
-    --accent: 38 70% 50%;
-    --accent-foreground: 30 15% 10%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 40 20% 95%;
-
-    --border: 30 15% 20%;
-    --input: 30 15% 20%;
-    --ring: 142 40% 45%;
-
-    --sidebar-background: 30 15% 10%;
-    --sidebar-foreground: 40 20% 95%;
-    --sidebar-primary: 142 40% 45%;
-    --sidebar-primary-foreground: 30 15% 10%;
-    --sidebar-accent: 30 20% 18%;
-    --sidebar-accent-foreground: 40 20% 90%;
-    --sidebar-border: 30 15% 20%;
-    --sidebar-ring: 142 40% 45%;
+    /* Same as root for this elegant dark theme */
+    --background: 240 10% 8%;
+    --foreground: 45 15% 92%;
+    --card: 240 10% 12%;
+    --card-foreground: 45 15% 92%;
+    --popover: 240 10% 10%;
+    --popover-foreground: 45 15% 92%;
+    --primary: 42 75% 55%;
+    --primary-foreground: 240 10% 8%;
+    --secondary: 240 8% 16%;
+    --secondary-foreground: 45 15% 88%;
+    --muted: 240 8% 18%;
+    --muted-foreground: 240 5% 55%;
+    --accent: 38 85% 58%;
+    --accent-foreground: 240 10% 8%;
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 45 15% 95%;
+    --border: 240 8% 20%;
+    --input: 240 8% 20%;
+    --ring: 42 75% 55%;
+    --sidebar-background: 240 10% 10%;
+    --sidebar-foreground: 45 15% 88%;
+    --sidebar-primary: 42 75% 55%;
+    --sidebar-primary-foreground: 240 10% 8%;
+    --sidebar-accent: 240 8% 16%;
+    --sidebar-accent-foreground: 45 15% 88%;
+    --sidebar-border: 240 8% 20%;
+    --sidebar-ring: 42 75% 55%;
   }
 }
 
@@ -124,13 +114,13 @@
 }
 
 @layer components {
-  /* Hero Text Overlay */
+  /* Hero Text Overlay - Darker gradient */
   .hero-overlay {
     background: linear-gradient(
       to bottom,
-      hsl(var(--forest-dark) / 0.4) 0%,
-      hsl(var(--forest-dark) / 0.6) 50%,
-      hsl(var(--forest-dark) / 0.8) 100%
+      hsl(var(--charcoal) / 0.5) 0%,
+      hsl(var(--charcoal) / 0.7) 50%,
+      hsl(var(--charcoal) / 0.9) 100%
     );
   }
 
@@ -138,16 +128,36 @@
   .section-nature {
     background: linear-gradient(
       135deg,
-      hsl(var(--cream)) 0%,
-      hsl(var(--cream-dark)) 100%
+      hsl(var(--charcoal-light)) 0%,
+      hsl(var(--charcoal-medium)) 100%
     );
   }
 
   .section-forest {
     background: linear-gradient(
       135deg,
-      hsl(var(--forest)) 0%,
-      hsl(var(--forest-dark)) 100%
+      hsl(var(--charcoal)) 0%,
+      hsl(var(--charcoal-light)) 100%
+    );
+  }
+
+  /* Elegant gold border accent */
+  .gold-border-accent {
+    position: relative;
+  }
+
+  .gold-border-accent::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      hsl(var(--gold)) 50%,
+      transparent 100%
     );
   }
 
@@ -173,28 +183,28 @@
     @apply opacity-100 translate-y-0;
   }
 
-  /* Glass card effect */
+  /* Glass card effect - darker */
   .glass-card {
-    background: hsl(var(--background) / 0.85);
+    background: hsl(var(--charcoal-light) / 0.9);
     backdrop-filter: blur(12px);
-    border: 1px solid hsl(var(--border) / 0.5);
+    border: 1px solid hsl(var(--gold) / 0.2);
   }
 
-  /* CTA Button gradient */
+  /* CTA Button gradient - Gold */
   .btn-nature {
     background: linear-gradient(
       135deg,
-      hsl(var(--forest)) 0%,
-      hsl(var(--forest-light)) 100%
+      hsl(var(--gold)) 0%,
+      hsl(var(--gold-dark)) 100%
     );
-    @apply text-primary-foreground shadow-lg transition-all duration-300;
+    @apply text-primary-foreground shadow-lg transition-all duration-300 font-semibold;
   }
 
   .btn-nature:hover {
     background: linear-gradient(
       135deg,
-      hsl(var(--forest-light)) 0%,
-      hsl(var(--forest)) 100%
+      hsl(var(--gold-light)) 0%,
+      hsl(var(--gold)) 100%
     );
     @apply shadow-xl -translate-y-0.5;
   }
@@ -206,21 +216,36 @@
       hsl(var(--gold)) 0%,
       hsl(var(--gold-light)) 100%
     );
-    @apply text-accent-foreground shadow-lg transition-all duration-300 font-semibold;
+    @apply text-primary-foreground shadow-lg transition-all duration-300 font-semibold;
   }
 
   .btn-gold:hover {
     @apply shadow-xl -translate-y-0.5 brightness-110;
+  }
+
+  /* Elegant card with gold border on hover */
+  .elegant-card {
+    @apply bg-card border border-border transition-all duration-300;
+  }
+
+  .elegant-card:hover {
+    border-color: hsl(var(--gold) / 0.5);
+    box-shadow: 0 0 30px hsl(var(--gold) / 0.1);
   }
 }
 
 @layer utilities {
   /* Text shadow for hero */
   .text-shadow {
-    text-shadow: 0 2px 8px hsl(var(--forest-dark) / 0.5);
+    text-shadow: 0 2px 8px hsl(var(--charcoal) / 0.8);
   }
 
   .text-shadow-lg {
-    text-shadow: 0 4px 16px hsl(var(--forest-dark) / 0.6);
+    text-shadow: 0 4px 16px hsl(var(--charcoal) / 0.9);
+  }
+
+  /* Gold text glow */
+  .text-glow {
+    text-shadow: 0 0 20px hsl(var(--gold) / 0.4);
   }
 }
