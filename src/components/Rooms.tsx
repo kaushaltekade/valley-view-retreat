@@ -36,7 +36,7 @@ const Rooms = () => {
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <span className="text-accent font-semibold text-sm uppercase tracking-wider">
+          <span className="text-primary font-semibold text-sm uppercase tracking-wider">
             Accommodation
           </span>
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mt-3 mb-4">
@@ -53,7 +53,7 @@ const Rooms = () => {
           {rooms.map((room, index) => (
             <div
               key={room.name}
-              className="group bg-card rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500"
+              className="group elegant-card rounded-2xl overflow-hidden"
               style={{ animationDelay: `${index * 0.2}s` }}
             >
               {/* Image */}
@@ -83,7 +83,7 @@ const Rooms = () => {
                     return (
                       <span
                         key={feature}
-                        className="inline-flex items-center gap-1.5 text-sm bg-secondary rounded-full px-3 py-1.5"
+                        className="inline-flex items-center gap-1.5 text-sm bg-secondary border border-border rounded-full px-3 py-1.5"
                       >
                         <Icon className="w-3.5 h-3.5 text-primary" />
                         {feature}

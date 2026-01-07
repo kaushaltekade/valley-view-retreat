@@ -27,18 +27,14 @@ const Header = () => {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         isScrolled
-          ? "bg-background/95 backdrop-blur-md shadow-lg py-3"
+          ? "bg-background/95 backdrop-blur-md shadow-lg shadow-black/20 py-3 border-b border-primary/20"
           : "bg-transparent py-5"
       }`}
     >
       <div className="container mx-auto px-4 flex items-center justify-between">
         {/* Logo */}
         <a href="#home" className="flex items-center gap-2">
-          <span
-            className={`font-display text-2xl md:text-3xl font-bold transition-colors duration-300 ${
-              isScrolled ? "text-primary" : "text-primary-foreground"
-            }`}
-          >
+          <span className="font-display text-2xl md:text-3xl font-bold text-primary text-glow">
             VRK Resort
           </span>
         </a>
@@ -49,9 +45,7 @@ const Header = () => {
             <a
               key={link.href}
               href={link.href}
-              className={`text-sm font-medium transition-colors duration-300 hover:text-accent ${
-                isScrolled ? "text-foreground" : "text-primary-foreground"
-              }`}
+              className="text-sm font-medium text-foreground/80 transition-colors duration-300 hover:text-primary"
             >
               {link.label}
             </a>
@@ -62,9 +56,7 @@ const Header = () => {
         <div className="hidden lg:flex items-center gap-4">
           <a
             href="tel:+919876543210"
-            className={`flex items-center gap-2 text-sm font-medium transition-colors duration-300 ${
-              isScrolled ? "text-primary" : "text-primary-foreground"
-            }`}
+            className="flex items-center gap-2 text-sm font-medium text-primary"
           >
             <Phone className="w-4 h-4" />
             <span>+91 98765 43210</span>
@@ -75,9 +67,7 @@ const Header = () => {
         {/* Mobile Menu Button */}
         <button
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          className={`lg:hidden p-2 transition-colors ${
-            isScrolled ? "text-foreground" : "text-primary-foreground"
-          }`}
+          className="lg:hidden p-2 text-foreground"
         >
           {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
         </button>
@@ -85,7 +75,7 @@ const Header = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`lg:hidden absolute top-full left-0 right-0 bg-background shadow-lg transition-all duration-300 ${
+        className={`lg:hidden absolute top-full left-0 right-0 bg-background/98 backdrop-blur-lg shadow-xl border-t border-primary/20 transition-all duration-300 ${
           isMobileMenuOpen ? "opacity-100 visible" : "opacity-0 invisible"
         }`}
       >
@@ -95,7 +85,7 @@ const Header = () => {
               key={link.href}
               href={link.href}
               onClick={() => setIsMobileMenuOpen(false)}
-              className="text-foreground text-lg font-medium py-2 border-b border-border"
+              className="text-foreground text-lg font-medium py-2 border-b border-border hover:text-primary transition-colors"
             >
               {link.label}
             </a>

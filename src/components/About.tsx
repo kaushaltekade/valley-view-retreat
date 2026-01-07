@@ -26,12 +26,12 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-20 lg:py-28 section-nature">
+    <section id="about" className="py-20 lg:py-28 section-nature gold-border-accent">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Image Side */}
           <div className="relative">
-            <div className="image-zoom rounded-2xl overflow-hidden shadow-2xl">
+            <div className="image-zoom rounded-2xl overflow-hidden shadow-2xl shadow-black/40 border border-primary/20">
               <img
                 src={resortBuilding}
                 alt="VRK Resort Building"
@@ -54,7 +54,7 @@ const About = () => {
 
           {/* Content Side */}
           <div>
-            <span className="text-accent font-semibold text-sm uppercase tracking-wider">
+            <span className="text-primary font-semibold text-sm uppercase tracking-wider">
               Welcome to VRK Resort
             </span>
             <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mt-3 mb-6">
@@ -70,8 +70,8 @@ const About = () => {
             {/* Feature Grid */}
             <div className="grid sm:grid-cols-2 gap-6">
               {features.map((feature) => (
-                <div key={feature.title} className="flex gap-4">
-                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                <div key={feature.title} className="flex gap-4 group">
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 border border-primary/20 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors">
                     <feature.icon className="w-6 h-6 text-primary" />
                   </div>
                   <div>
